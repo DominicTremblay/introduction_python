@@ -109,8 +109,8 @@ power_ups = [obj for obj in objets_magiques if len(obj) > 5]
 print(f"Power-ups spéciaux: {power_ups}")
 
 # 7. FONCTIONS - Actions de Mario
-def saluer(nom="Mario", action="saute"):
-    """Fonction pour faire saluer Mario"""
+def execute(nom="Mario", action="saute"):
+    """Fonction pour faire bouger Mario"""
     return f"{nom} fait l'action de {action} !"
 
 def collecter_piece(joueur_dict, valeur_piece=100):
@@ -135,8 +135,8 @@ def verifier_victoire(score_actuel, score_objectif=5000):
 print("\n=== 🎮 SIMULATION DE JEU ===")
 
 # Mario commence son aventure
-print(saluer())
-print(saluer("Luigi", "court"))
+print(execute())
+print(execute("Luigi", "court"))
 
 # Collecte des pièces
 for _ in range(3):
